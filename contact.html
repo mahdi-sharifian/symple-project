@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>تماس با ما</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assests/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+    <link href="http://www.fontonline.ir/css/BYekan.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="assets/images/logo1.png" type="image/gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترتی برتر دیجیتال|خانه</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assests/fonts/Sans Serif Bundle(www.Downloadha.com)/">
+    <link rel="stylesheet" href="assests/fonts/Roboto-BlackItalic.ttf">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #header nav {
+            margin-right: 35px;
+        }
+
+        #header nav a {
+            margin: 10px;
+            padding: 10px 40px;
+            color: rgb(61, 60, 60);
+            border-bottom: 2px solid transparent;
+            transition: 1s;
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+        }
+
+        #header nav a:hover {
+            border-color: whitesmoke;
+            color: black;
+        }
+
+        .wrapper {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        #navigation {
+            float: right;
+        }
+
+        #navigation li {
+            display: inline;
+            list-style: none;
+        }
+
+        #navigation li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 30px;
+            float: right;
+        }
+
+        #topLogo {
+            float: left;
+            margin-top: 15px;
+        }
+
+        #navigation li a:hover {
+            color: #00e4d5;
+        }
+
+        .siteDescripton {
+            width: 80%;
+            height: auto;
+            margin: 100px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .siteDescripton h1 {
+            padding-bottom: 5px;
+            font-size: 36px;
+            border-bottom: 1px solid #00e0d0;
+            display: inline;
+        }
+
+        .siteDescripton h2 {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 2;
+        }
+
+        .siteDescripton a {
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid #00e0d0;
+            border-radius: 3px;
+            color: #00e0d0;
+            padding: 5px 10px;
+            margin-top: 20px;
+        }
+
+        .siteDescripton a:hover {
+            border: 1px solid white;
+            background-color: #00e0d0;
+            color: white;
+        }
+
+        #slideNav {
+            margin-top: 80px;
+        }
+
+        #slideNav span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            background-color: rgba(255, 255, 255, .5);
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        #slideNav .active {
+            background-color: #e00000;
+        }
+
+        #slideNav div {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        #customerComments {
+            background-image: url("../images/bg2.png");
+            width: 100%;
+            height: 500px;
+            padding-top: 60px;
+        }
+
+        #customerComments img:first-of-type {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #customerComments p {
+            color: white;
+            line-height: 1.6;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-align-last: center;
+            font-size: 18px;
+        }
+
+        #customerComments p strong {
+            font-size: 18px;
+        }
+
+        #customerComments p span {
+            font-size: 16px;
+        }
+
+        #customerComments img:last-of-type {
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        #contact {
+            width: 100%;
+            background-color: white;
+            padding: 50px 0;
+        }
+
+        #contact .right {
+            width: 50%;
+            float: right;
+            padding: 20px;
+        }
+
+        #contact .left {
+            width: 50%;
+            float: left;
+            padding: 20px;
+
+        }
+
+        #contact .left h2,
+        #contact .right h2 {
+            color: #413d4b;
+            margin-bottom: 20px;
+        }
+
+        #contact .left img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #contact .right input,
+        #contact .right textarea {
+            font-family: IranNastaliq, 'IranNastaliq', tahoma;
+            display: block;
+            width: 90%;
+            margin: 20px 0;
+            font-size: 14px;
+            outline: none;
+            padding: 0 10px;
+            border: 1px solid #e5e5e5;
+        }
+
+        #contact .right input {
+            height: 35px;
+        }
+
+        #contact .right textarea {
+            height: 180px;
+            resize: none;
+        }
+
+        #sendCmdMsg {
+            border: 1px solid #00e0d0;
+            padding: 15px;
+            width: 100px !important;
+            color: #00e0d0;
+            font-size: 16px !important;
+            border-radius: 4px;
+            background-color: inherit;
+        }
+
+        #sendCmdMsg:hover {
+            background-color: #00e0d0;
+            color: white;
+        }
+
+        #footer {
+            background-image: url("../images/bg3.png");
+            width: 100%;
+            height: 300px;
+        }
+
+        #footer .right {
+            width: 50%;
+            float: right;
+            padding: 20px;
+        }
+
+        #footer .left {
+            width: 50%;
+            float: left;
+            padding: 20px;
+
+        }
+
+        #footer .right,
+        #footer .left {
+            margin-top: 30px;
+        }
+
+        #footer p {
+            color: white;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        #footer h2 {
+            color: white;
+        }
+
+        #copyRight {
+            float: right;
+            margin-top: 20px;
+        }
+
+        #footerLink {
+            float: left;
+        }
+
+        #footerLink a {
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .titleHeader {
+            color: white;
+            border-right: 6px solid #00e0d0;
+            padding-right: 10px;
+            margin-top: 25px;
+            position: relative;
+            right: -40px;
+            top: 10px;
+        }
+
+        #aboutUs .right {
+            width: 50%;
+            float: right;
+            padding: 20px;
+        }
+
+        #aboutUs .left {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #aboutUs .right h2 {
+            color: #413d4b;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        #aboutUs .right h2:first-of-type {
+            text-align: center;
+        }
+
+        #aboutUs p {
+            text-align: justify;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+
+        #aboutUs .left img {
+            max-width: 500px;
+        }
+
+        #contactUs .right {
+            width: 50%;
+            float: right;
+            padding: 20px;
+        }
+
+        #contactUs .left {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #contactUs .right h2 {
+            color: #413d4b;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        #contactUs .right p {
+            margin-bottom: 20px;
+        }
+
+        #form1 input,
+        textarea {
+            font-family: IranNastaliq, 'IranNastaliq', tahoma;
+        }
+
+        #form1 input:first-child {
+            outline: none;
+            padding: 3px 7px;
+            float: right;
+            width: 46%;
+            margin-left: 9px;
+        }
+
+        #form1 input:nth-child(2) {
+            outline: none;
+            padding: 3px 7px;
+            float: right;
+            width: 47%;
+        }
+
+        #form1 input:nth-child(3) {
+            margin-top: 10px;
+            outline: none;
+            padding: 3px 7px;
+            float: right;
+            width: 95%;
+        }
+
+        #form1 textarea {
+            margin-top: 10px;
+            outline: none;
+            padding: 3px 7px;
+            float: right;
+            width: 95%;
+            resize: none;
+            height: 100px;
+        }
+
+        #form1 input[type=submit] {
+            outline: none;
+            margin-top: 20px;
+            border: 1px solid #00e0d0;
+            padding: 3px 5px;
+            width: 100px !important;
+            color: #00e0d0;
+            font-size: 16px !important;
+            border-radius: 4px;
+            background-color: inherit;
+        }
+
+        #form1 input[type=submit]:hover {
+            background-color: #039BE5;
+            color: white;
+        }
+
+        #contactUs .left h2 {
+            color: #413d4b;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        #contactUs .supportTel,
+        #contactUs .supportEmail,
+        #contactUs .address {
+            margin-top: 8px;
+        }
+
+        #contactUs .supportTel div:last-of-type,
+        #contactUs .supportEmail div:last-of-type,
+        #contactUs .address div:last-of-type {
+            float: left;
+            width: 90%;
+        }
+
+        #contactUs .left .icon {
+            float: right;
+            width: 10%;
+            font-size: 20px;
+            color: blanchedalmond;
+        }
+
+        #contactUs hr {
+            margin-top: 7px;
+            width: 90%;
+            border: 1px solid #eee;
+        }
+
+        #contactUs h3 {
+            color: #413d4b;
+            margin-bottom: 3px;
+        }
+
+        .share {
+            text-align: center;
+            font-size: large;
+            font-size: 12px;
+
+
+        }
+
+        @media screen and (max-width: 1200px) {
+            #header {
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #header form {
+                display: none;
+            }
+        }
+
+
+
+        @media screen and (max-width: 1200px) {
+            .header {
+                width: 48%;
+            }
+        }
+
+        .product:last-child {
+            display: none;
+        }
+    </style>
+
+</head>
+
+
+<header id="header">
+
+    <div style="padding-top: 10px;"><a href="index.html"><img src="assests/img/logo-small.png" alt=""
+                style="width: 10%;"></a></div>
+
+    <div id="header">
+        <div class="wrapper">
+            <nav>
+                <a href="index.html">خانه</a>
+                <a href="products">محصولات</a>
+                <a href="mobile">موبایل</a>
+                <a href="blog.html">صفحه بلاگ</a>
+                <a href="aboutus.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+
+            </nav>
+
+
+            <div class="clear"></div>
+            <div class="titleHeader">
+                <hr>
+                <h1>تماس با ما</h1>
+            </div>
+        </div>
+    </div>
+
+    <main id="contactUs">
+        <div class="wrapper">
+            <div class="right">
+                <h2>ارسال پیغام</h2>
+                <p>پیغام خود را به ما ارسال کنید.</p>
+                <form id="form1">
+                    <input type="text" placeholder="نام" name="name" />
+                    <input type="email" placeholder="نام خانوادگی" name="email" />
+                    <input type="text" placeholder="ایمیل" name="subject" />
+                    <textarea placeholder="توضیحات" name="msg"></textarea>
+                    <input type="submit" value="ارسال" />
+                </form>
+            </div>
+            <div class="left">
+                <address>
+                    <h2> تماس با ما</h2>
+
+                    <div class="supportTel">
+                        <div class="icon">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>شماره پشتیبانی</h3>
+                            <p>9198157022(98+)</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="supportEmail">
+                        <div class="icon">
+                            <br>
+                            <i class="fa fa-at" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>ایمیل پشتیبانی</h3>
+                            <p>msh1@gmail.com</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="address">
+                        <div class="icon">
+                            <br>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>آدرس</h3>
+                            <p>تهران، ولنجک خیابان 13 شرکت برتر دیجیتال داده)</p>
+                        </div>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </main>
+
+    <div class="clear"></div>
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="right"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div>
+                <p
+                    style="font-size: x-large;text-align: center; color: whitesmoke; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    <strong>ما را در شبکه های اجتماعی دنبال کنبد</strong>
+                </p>
+                <br>
+                <div class="share">
+                    <nav>
+                        <a href="#"><i style="color: #1976D2;" class="fa fa-twitter"></i></a>
+                        <a href="#"><i style="padding-right: 15px;" class="fa fa-facebook"></i></a>
+                        <a href="#"><i style="padding-right: 15px;color: #E53935;" class="fa fa-google"></i></a>
+                        <a href="#"><i style="padding-right: 15px;" class="fa fa-skype"></i></a>
+                        <a href="#"><i style="padding-right: 15px;color: #1976D2;" class="fa fa-telegram"></i></a>
+                        <a href="#"><i style="padding-right: 15px;color: #8E24AA;" class="fa fa-instagram"></i></a>
+                        <a href="#"><i style="padding-right: 15px;color: #66BB6A;" class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i style="padding-right: 15px;color: #C62828;" class="fa fa-youtube"></i></a>
+
+                    </nav>
+                </div>
+            </div>
+            <br>
+    </footer>
+
+    <body style="background-image: url(assests/img/IMG_0493.JPG);background-repeat: no-repeat;background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+        
+ <script src=" async defer>
+        </script>
+    </body>
+
+</html>

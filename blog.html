@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترتی برتر دیجیتال|خانه</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assests/fonts/Sans Serif Bundle(www.Downloadha.com)/">
+    <link rel="stylesheet" href="assests/fonts/Roboto-BlackItalic.ttf">
+    <style>
+        /* global */
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .wrapper {
+            max-width: 1600px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 20px;
+        }
+
+        .product {
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            box-shadow: 5px 15px 10px 0px #cab7b7;
+            text-align: center;
+            padding: 7px 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .product :hover {
+            transform: scale(1.2, 1.1);
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+
+        .d-flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* header */
+
+        #header {
+            box-shadow: 6px 2px 20px 0px #cab7b7;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+        }
+
+        #header .bar {
+            display: none;
+        }
+
+        #header form {
+            margin-right: auto;
+        }
+
+        #header nav {
+            margin-right: 35px;
+        }
+
+        #header nav a {
+            padding: 0 18px;
+            color: rgb(61, 60, 60);
+            border-bottom: 2px solid transparent;
+            transition: 1s;
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+        }
+
+        #header nav a:hover {
+            border-color: #C62828;
+            color: rgb(61, 60, 60);
+
+        }
+
+        #header input {
+            padding: 4px 10px;
+            border-radius: 5px;
+            border: 2px solid goldenrod;
+        }
+
+        #header input:focus {
+            outline: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+            #header {
+                justify-content: space-between;
+            }
+
+            #header form {
+                margin-right: 0;
+            }
+
+            #header nav {
+                display: none;
+            }
+
+            #header .bar {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #header form {
+                display: none;
+            }
+        }
+
+
+
+        .product {
+            width: 19%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .product {
+                width: 48%;
+            }
+
+            .product:last-child {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .product {
+                width: 90%;
+            }
+
+            .product:last-child {
+                display: block;
+            }
+        }
+
+
+        .saat {
+            width: 19%;
+            border-radius: 45%;
+            box-shadow: 6px 0px 20px 0px #cab7b7;
+            text-align: center;
+            padding: 2px 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            background-color: #F44336;
+
+        }
+
+        .saat :hover {
+            transform: scale(0.9, 0.9);
+
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: right;
+            width: 80%;
+            height: 30%;
+            background: #f1f1f1;
+        }
+
+        form.example button {
+
+            width: 20%;
+            height: 32px;
+            padding: 5px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            border-left: none;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .titr {
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            border: 1px solid green;
+            border-radius: 10px;
+            background-color: greenyellow;
+            width: 200px;
+        }
+
+        .blueline {
+            display: flex;
+            background-color: #1565C0;
+            color: whitesmoke;
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+
+
+
+
+
+        }
+
+        .namad {
+            display: flex;
+            padding: 50px 2px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .foot1 {
+
+
+            color: whitesmoke;
+            width: 100%;
+
+            font-size: large;
+            padding: 20px 100px;
+            overflow: hidden;
+
+        }
+
+        .vorod {
+            border-radius: 8px;
+            width: 75%;
+            height: 25px;
+            padding: 2px 10px 10px 10px;
+            margin-right: 40px;
+            background: #2196F3;
+            font-size: 110%;
+            text-align: center;
+            color: blanchedalmond;
+
+
+        }
+
+        .vorod :hover {
+            background: chartreuse;
+
+        }
+
+        .article {
+
+            border: 1px solid lightblue;
+            position: relative;
+            margin: 4px;
+        }
+
+        .article .date {
+            color: white;
+            background-color: #2E7D32;
+            border-radius: 15px;
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+
+        .article .read-more {
+            text-decoration: none;
+            border: 1px solid gray;
+            border-radius: 4px;
+            background-color: #4FC3F7;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .parallax {
+            width: 100%;
+            height: 100%;
+            background-image: url(assests/img/fullblog.jpg);
+        }
+    </style>
+</head>
+
+
+
+
+
+<header id="header">
+    <div class="bar">
+        <i class="fa fa-bars" aria-hidden="true" style="font-size:25px;padding-top:2px; cursor:pointer;"></i>
+    </div>
+    <div style="padding-top: 10px;"><img src="assests/img/logo-small.png" alt="" style="width: 60%;"></div>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="products">محصولات</a>
+        <a href="mobile">موبایل</a>
+        <a href="blog.html">صفحه بلاگ</a>
+        <a href="aboutus.html">درباره ما</a>
+        <a href="contact.html">تماس با ما</a>
+
+    </nav>
+    </div>
+
+    <div class="clearfix">
+
+        <a class="vorod" href="#">ورود | ثبت نام</a>
+
+    </div>
+
+    <body>
+
+
+
+        <form class="example" action="/action_page.php" style="margin:auto;">
+            <input type="text" placeholder="جستجو کن.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+        </form>
+</header>
+<div class="parallax"></div>
+
+<div class="article">
+
+    <h2 style="color:#2E7D32;">بهترین گوشی پوکو ؛ بررسی لیست گوشیهای پوکو</h2>
+    <span span class="date">1400 خرداد</span>
+    <p>پوکو به عنوان یک برند زیرمجموعه شیائومی در سال 2018 به بازار عرضه شد و به لطف نخستین گوشی هوشمند آن یعنی پوکو F1
+        شهرت پیدا کرد، زیرا گوشی‌های پوکو مشخصات خوبی را با قیمت مقرون به صرفه ارائه می‌دهند. پوکو از سال 2020 به عنوان
+        یک برند مستقل کار خود را ادامه داده و محصول اخیر آن با عنوان پوکو ایکس تری پرو در مارس 2021 عرضه شده است. در این
+        قسمت لیستی از گوشی های پوکو جدید و به طور کلی گوشی های موبایل پوکو به همراه قیمت گوشی های پوکو معرفی می‌شود.
+        وشی پوکو X3 Pro به عنوان بهترین گوشی پوکو، یک گوشی مقرون به صرفه قابل قبول محسوب می‌شود. از نقاط قوت این برترین
+        گوشی سری پوکو می‌توان به سرعت عملکرد آن اشاره کرد، با توجه به اینکه قیمت ارزانی هم دارد. اما دوربین‌ها زیاد جالب
+        توجه نیستند. انواع گوشی پوکو در بازار وجود دارد، اما پوکو ایکس تری پرو ۲۰۲۱ (Xiaomi POCO X3 Pro) یکی از برترین
+        گوشی های پوکو شیائومی بشمار می‌رود. در واقع، نسخه پرو مدل NFC است و در بالاترین جایگاه لیست برترین گوشی سری پوکو
+        قرار می‌گیرد. همچنین از قابلیت ضد آب و گرد و غبار IP53 برخوردار است. کدام محصول در لیست گوشیهای پوکو می‌تواند
+        عنوان «بهترین» را بگیرد؟.</p>
+    <a href="#" class="read-more">توضیح بیشتر</a>
+    <div style="height: 20px;"></div>
+</div>
+
+<div class="article">
+    <h2 style="color:#2E7D32;">بررسی گوشیهای اینده</h2>
+    <span span class="date">1400 تیر</span>
+    <p>تاریخ عرضه: سپتامبر 2020 | وزن: 215 گرم | ابعاد: 165.3 در 76.8 در 9.4 میلی متر | سیستم عامل: اندروید 10 | اندازه
+        نمایشگر: 6.67 اینچ | رزولوشن: 1080 در 2400 | سی پی یو: اسنپدراگون 732G | رم: 6 گیگابایت | حافظه: 64 یا 128
+        گیگابایت | باتری: 5160 میلی آمپر ساعت | دوربین اصلی: 64 + 13 + 2 + 2 مگاپیکسل | دوربین سلفی: 32 مگاپیکسل | قیمت
+        تقریبی: از 4500 تا 5 میلیون تومان
+
+        گوشی پوکو X3 NFC ۲۰۲۰ به عنوان یکی از بهترین گوشی های POCO، یک گوشی مقرون به صرفه و دارای مشخصات نسبتاً خوب
+        بشمار می‌رود. از نقاط قوت این گوشی می‌توان به نمایشگر 120 هرتزی و عمر باتری عالی آن اشاره کرد. اما خیلی بزرگ است
+        و دوربینش چندان جالب توجه نیست. با این حال با توجه به قیمت مقرون به صرفه‌ای که دارد، مشخصاتش خیلی خوب به نظر
+        می‌رسند و از بهترین گوشی های پوکو 2020 بشمار می‌رود..</p>
+    <a href="#" class="read-more">توضیح بیشتر</a>
+    <div style="height: 20px;"></div>
+</div>
+<div class="article">
+    <h2 style="color:#2E7D32;">معرفی بهترین گوشی های نوکیا</h2>
+    <span span class="date">1400 مرداد</span>
+    <p>نمایشگر: 5.99 اینچ | پردازنده: اسنپدراگون 845 | دوربین‌ها: 12 + 12 + 12 + 12 + 12 مگاپیکسل | دوربین سلفی: 20
+        مگاپیکسل | رم: 6 گیگابایت | حافظه: 128 گیگابایت | باتری: 3320 میلی‌آمپر
+
+        نوکیا 9 پیورویو بهترین گوشی لمسی نوکیا 2019 و آخرین پرچمدار گوشی های نوکیا ۲۰۱۹ است. چندین سال است که شایعات و
+        اخبار مختلفی درمورد عرضه پرچمدار جدید این شرکت به گوش می‌رسد ولی تا به امروز هنوز هیچ چیزی به طور رسمی اعلام
+        نشده و نوکیا 9 پیورویو همچنان پرچمدار این شرکت است.
+
+        این گوشی از زمان عرضه تا کنون تنها گوشی جهان است که با 5 دوربین عرضه شده گرچه که از نظر سخت افزار دیگر قدیمی
+        شده‌ با این حال از نظر قیمت گوشی های نوکیا 2019 و به خصوص این مدل نیز به اندازه قابل توجهی کاهش پیدا کرده است.
+    </p>
+    <a href="#" class="read-more">توضیح بیشتر</a>
+    <div style="height: 20px;"></div>
+</div>
+<div class="article">
+    <h2 style="color:#2E7D32;">رونمایی‌ از لپ‌تاپ‌های فوق‌العاده باریک ایسر</h2>
+    <span span class="date">1400 فروردین</span>
+    <p>یسر اسپین ۳ دارای یک صفحه نمایش لمسی ۱۴ اینچی FullHD با نسبت تصویر ۱۶:۹ است. این محصول با Intel Core i7 و کارت
+        گرافیک Intel Iris Plus همگام شده است. همچنین می‌توان Spin 3 را با حداکثر رم ۱۶ گیگابایتی و گزینه‌های ذخیره
+        دوگانه SSD خریداری کرد.
+
+        همانطور که گفته شد، اسپین ۳ جدید به شکلی باریک‌تر طراحی شده تا تجربه کاربری را بهتر کند و ایسر مدعی شده است که
+        باتری این محصول با هر بار شارژ ۱۲ ساعت دوام خواهد داشت. همچنین پشتیبانی از شارژ سریع نیز در این محصول پیش بینی
+        شده است. ایسر اسپین ۳ دارای یک درگاه USB Type-C با پشتیبانی از Thunderbolt 3 ، دو درگاه USB 3.2 Gen 1 ، یک درگاه
+        HDMI و یک درگاه microSD به همراه پشتیبانی از اتصال WiFi 6 است. پیش بینی می‌شود Acer Spin 3 از آوریل با قیمت ۶۹۹
+        دلار در ایالات متحده عرضه شود.</p>
+    <a href="#" class="read-more">توضیح بیشتر</a>
+    <div style="height: 20px;"></div>
+</div>
+<div class="article">
+    <h2 style="color:#2E7D32;">قدرتمندترین لپ‌تاپ‌های تجاری و قابل حمل دنیا</h2>
+    <span span class="date">1400 فروردین</span>
+    <p>عالی در کنار ضخامت بیش از ۱۰ میلی متر و وزن ۱.۱۶ کیلوگرم ، CPU مناسب Core i7 را با نمایشگر کامل ۱۳.۳ اینچ HD ، یک
+        باتری عظیم ۴ سلولی ۳۸Whr و سه USB Type C از خصوصیات ممتاز این لپ‍تاپ HP است.
+        همانطور که گفته شد، اسپین ۳ جدید به شکلی باریک‌تر طراحی شده تا تجربه کاربری را بهتر کند و ایسر مدعی شده است که
+        باتری این محصول با هر بار شارژ ۱۲ ساعت دوام خواهد داشت. همچنین پشتیبانی از شارژ سریع نیز در این محصول پیش بینی
+        شده است. ایسر اسپین ۳ دارای یک درگاه USB Type-C با پشتیبانی از Thunderbolt 3 ، دو درگاه USB 3.2 Gen 1 ، یک درگاه
+        HDMI و یک درگاه microSD به همراه پشتیبانی از اتصال WiFi 6 است. پیش بینی می‌شود Acer Spin 3 از آوریل با قیمت ۶۹۹
+        دلار در ایالات متحده عرضه شود</p>
+    <a href="#" class="read-more">توضیح بیشتر</a>
+    <div style="height: 20px;"></div>
+</div>
+</main>
+<img src="assests/img/support1.jpg" alt="پشتیبانی "
+    style="position: fixed;bottom: 20px;right:20px;width: 100px;border-radius: 60px;">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>

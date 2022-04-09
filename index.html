@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترتی برتر دیجیتال|خانه</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assests/fonts/Sans Serif Bundle(www.Downloadha.com)/">
+    <link rel="stylesheet" href="assests/fonts/Roboto-BlackItalic.ttf">
+    <style>
+        /* global */
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .wrapper {
+            max-width: 1600px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 20px;
+        }
+
+        .product {
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            box-shadow: 5px 15px 10px 0px #cab7b7;
+            text-align: center;
+            padding: 7px 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .product :hover {
+            transform: scale(1.2, 1.1);
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+
+        .d-flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* header */
+
+        #header {
+            box-shadow: 6px 2px 20px 0px #cab7b7;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+        }
+
+        #header .bar {
+            display: none;
+        }
+
+        #header form {
+            margin-right: auto;
+        }
+
+        #header nav {
+            margin-right: 35px;
+        }
+
+        #header nav a {
+            padding: 0 18px;
+            color: rgb(61, 60, 60);
+            border-bottom: 2px solid transparent;
+            transition: 1s;
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+        }
+
+        #header nav a:hover {
+            border-color: #C62828;
+            color: rgb(61, 60, 60);
+
+        }
+
+        #header input {
+            padding: 4px 10px;
+            border-radius: 5px;
+            border: 2px solid goldenrod;
+        }
+
+        #header input:focus {
+            outline: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+            #header {
+                justify-content: space-between;
+            }
+
+            #header form {
+                margin-right: 0;
+            }
+
+            #header nav {
+                display: none;
+            }
+
+            #header .bar {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #header form {
+                display: none;
+            }
+        }
+
+
+
+        .product {
+            width: 19%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .product {
+                width: 48%;
+            }
+
+            .product:last-child {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .product {
+                width: 90%;
+            }
+
+            .product:last-child {
+                display: block;
+            }
+        }
+
+
+        .saat {
+            width: 19%;
+            border-radius: 45%;
+            box-shadow: 6px 0px 20px 0px #cab7b7;
+            text-align: center;
+            padding: 2px 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            background-color: #F44336;
+
+        }
+
+        .saat :hover {
+            transform: scale(0.9, 0.9);
+
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: right;
+            width: 80%;
+            height: 30%;
+            background: #f1f1f1;
+        }
+
+        form.example button {
+
+            width: 20%;
+            height: 32px;
+            padding: 5px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            border-left: none;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .titr {
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            border: 1px solid green;
+            border-radius: 10px;
+            background-color: greenyellow;
+            width: 200px;
+        }
+
+        .blueline {
+            display: flex;
+            background-color: #1565C0;
+            color: whitesmoke;
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+
+
+
+
+
+        }
+
+        .namad {
+            display: flex;
+            padding: 50px 2px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .foot1 {
+
+
+            color: whitesmoke;
+            width: 100%;
+
+            font-size: large;
+            padding: 20px 100px;
+            overflow: hidden;
+
+        }
+
+        .vorod {
+            border-radius: 8px;
+            width: 75%;
+            height: 25px;
+            padding: 2px 10px 10px 10px;
+            margin-right: 40px;
+            background: #2196F3;
+            font-size: 110%;
+            text-align: center;
+            color: blanchedalmond;
+
+
+        }
+
+        .vorod :hover {
+            background: chartreuse;
+
+        }
+
+        .buy {
+            border: 8px solid #43A047;
+            background-color: #43A047;
+            color: ivory;
+            border-radius: 8px;
+            width: 75%;
+
+        }
+
+        .share {
+            text-align: center;
+            font-size: xx-large;
+            font-size: 45px;
+        }
+
+        .support :hover {
+            cursor: pointer;
+            transform: scale(1, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="bar">
+            <i class="fa fa-bars" aria-hidden="true" style="font-size:25px;padding-top:2px; cursor:pointer;"></i>
+        </div>
+        <div style="padding-top: 10px;"><a href="index.html"><img src="assests/img/logo-small.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+
+        <nav>
+            <a href="index.html">خانه</a>
+            <a href="products">محصولات</a>
+            <a href="mobile">موبایل</a>
+            <a href="blog.html">صفحه بلاگ</a>
+            <a href="aboutus.html">درباره ما</a>
+            <a href="contact.html">تماس با ما</a>
+
+        </nav>
+        </div>
+        <div class="clearfix">
+
+            <a class="vorod" href="#">ورود | ثبت نام</a>
+
+        </div>
+
+
+        <form class="example" action="/action_page.php" style="margin:auto;">
+            <input type="text" placeholder="جستجو کن.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+        </form>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section style="margin-top: 15px;">
+                <h2 class="titr">محصولات داغ روز</h2>
+                <div class="last-products d-flex">
+                    <div class="product">
+                        <img src="assests/img/poco-m3-pro-5g-4-250x250.jpg" alt="">
+                        <h3>گوشی شیامی</h3>
+                        <p>5199000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/realme-7-pro-3-250x250.jpg" alt="">
+                        <h3>گوشی سامسونگ</h3>
+                        <p>7950000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/realme-7i-3-250x250.jpg" alt="">
+                        <h3>گوشی اینیفیکس</h3>
+                        <p>6850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/ipad-mini-wifi-38-250x250.jpg" alt="">
+                        <h3>تبلت اپل 2020</h3>
+                        <p>9850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/mi-band-6-2-250x250.jpg" alt="">
+                        <h3>دستبند شیامی 2020</h3>
+                        <p>985000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                </div>
+                <h2 class="titr">محصولات جانبی</h2>
+                <div class="last-products d-flex">
+                    <div class="product">
+                        <img src="assests/img/EP-DG997-typeC-Cable-1-250x250.jpg" alt="">
+                        <h3>کابل ایفون</h3>
+                        <p>5199000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/galaxy-buds-pro-4-250x250.jpg" alt="">
+                        <h3>هدفون بیسیم</h3>
+                        <p>7950000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/haylou-gt2s-2-250x250.jpg" alt="">
+                        <h3>ایرپادپرو </h3>
+                        <p>6850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/iphone-11-pro-full-glass-2-250x250.jpg" alt="">
+                        <h3>گلس ایفون11</h3>
+                        <p>9850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/Sony-Headphones-wh-ch710n_Blue_01-250x250.jpg" alt="">
+                        <h3>دستبند شیامی 2020</h3>
+                        <p>985000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                </div>
+                <h2 class="titr">ساعت هوشمند</h2>
+                <div class="last-products d-flex">
+                    <div class="saat">
+                        <img src="assests/img/apple-watch-se-4-250x250.jpg" alt="">
+                        <h3>اپل واچ سری4</h3>
+                        <p>5199000 تومان</p>
+                    </div>
+                    <div class="saat">
+                        <img src="assests/img/apple-watch-series-6-6-250x250.jpg" alt="">
+                        <h3>اپل واچ سری6</h3>
+                        <p>7950000 تومان</p>
+                    </div>
+                    <div class="saat">
+                        <img src="assests/img/Samsung-Galaxy-Watch-Active2-4-250x250.jpg" alt="">
+                        <h3>ساعت سامسونگ</h3>
+                        <p>6850000 تومان</p>
+                    </div>
+                    <div class="saat">
+                        <img src="assests/img/Nike-Silicone-Strap-For-Apple-Watch-42mm_Green.jpg" alt="">
+                        <h3>بند ساعت اپل</h3>
+                        <p>9850000 تومان</p>
+                    </div>
+                    <div class="saat">
+                        <img src="assests/img/galaxy-watch-3-45-mm-6-250x250.jpg" alt="">
+                        <h3>ساعت گالکسی</h3>
+                        <p>985000 تومان</p>
+                    </div>
+                </div>
+                <h2 class="titr">جدیدترین تبلتها</h2>
+                <div class="last-products d-flex">
+                    <div class="product">
+                        <img src="assests/img/ipad-10.2-2020-4-250x250.jpg" alt="">
+                        <h3>تبلت شیامی</h3>
+                        <p>5199000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/ipad-air-2020-6-250x250.jpg" alt="">
+                        <h3>تبلت سامسونگ</h3>
+                        <p>7950000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/galaxy-tab-s7-plus-4-250x250 (1).jpg" alt="">
+                        <h3>تبلت اینیفیکس</h3>
+                        <p>6850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/ipad-mini-wifi-38-250x250.jpg" alt="">
+                        <h3>تبلت اپل 2020</h3>
+                        <p>9850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/Samsung-Galaxy-Tab-A-10.1-2019-4G-6-250x250.jpg" alt="">
+                        <h3>تبلت شیامی 2020</h3>
+                        <p>985000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                </div>
+                <h2 class="titr">جدیدترین لپتاپ</h2>
+                <div class="last-products d-flex">
+                    <div class="product">
+                        <img src="assests/img/lap.jpg" alt="">
+                        <h3>لپتاپ ASUS</h3>
+                        <p>5199000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/lap1.jpg" alt="">
+                        <h3>لپتاپ ACER</h3>
+                        <p>7950000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/lap2.jpg" alt="">
+                        <h3>لپتاپ SONY</h3>
+                        <p>6850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/lap3.jpg" alt="">
+                        <h3>IMAC پرو</h3>
+                        <p>9850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                </div>
+                <h2 class="titr">اسپیکر بلوتوث</h2>
+                <div class="last-products d-flex">
+                    <div class="product">
+                        <img src="assests/img/speaker.jpg" alt="">
+                        <h3>اسپیکر avengers</h3>
+                        <p>5199000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/speaker_red-1.jpg" alt="">
+                        <h3>اسپیکر هارمن</h3>
+                        <p>7950000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/-speakers-wireless-led-500x500.jpg" alt="">
+                        <h3>اسپیکر مینی ks</h3>
+                        <p>6850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/_portable_bluetooth_1583007.jpg" alt="">
+                        <h3>اسپیکر jbl</h3>
+                        <p>9850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+
+                </div>
+                <h2 class="titr">کنسول و بازی</h2>
+                <div class="last-products d-flex">
+                    <div class="product">
+                        <img src="assests/img/Marvel-Avengers-PS5_01-250x250.jpg" alt="">
+                        <h3>بازی avengers</h3>
+                        <p>5199000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/Sony-Headphones-wh-ch710n_Blue_01-250x250.jpg" alt="">
+                        <h3>هدفون گیمینگ</h3>
+                        <p>7950000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/Victory-Gaming-Chair-Green_09-250x250.jpg" alt="">
+                        <h3>صندلی گیمینگ</h3>
+                        <p>6850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+                    <div class="product">
+                        <img src="assests/img/Rainbow-Six-Siege-PS5_02-250x250.jpg" alt="">
+                        <h3>بازی rainbow</h3>
+                        <p>9850000 تومان</p>
+                        <a class="buy" href="#">خرید</a>
+                    </div>
+
+            </section>
+        </div>
+        <br>
+
+        <div class="blueline">
+            <h3><strong>اگر سوالی دارید، با ما تماس بگیرید:</strong></h3>
+
+            <span style="padding-right: 120px;width: 25%;"><strong>واحد فروش : 09198157022 </strong>
+
+                <a href="tel:09198157022" target="_blank"></a>
+                <i class="fa fa-phone-square" style="color:white"></i>
+            </span>
+
+            <span style="padding-right: 120px ;"></span><strong>واحد پشتیبانی : 9198157022</strong> </span>
+
+
+            <a href="tel:09198157022" target="_blank"></a>
+            <i class="fa fa-phone-square" style="color:white"></i>
+            </span>
+
+
+
+            <span style="padding-right: 120px;width: 20%;"><strong>سوالات متداول</strong> </span>
+            <a href="https://bartardigital.com/faq" target="_blank"></a>
+
+            <br><br><br><br><br><br><br><br>
+
+            </a>
+        </div>
+
+    </main>
+    <footer>
+
+        <div class="namad">
+            <h3 style="color: black;margin-right: 25px;">نماد اعتماد الکترونیکی</h3>
+            <img src="assests/img/enamad.png" style="width: 150px;" alt="">
+            <h3 style="color: black;margin-right: 25px;">نشان ملی ثبت</h3>
+            <img src="assests/img/enamad1.png" style="width: 150px;" alt="">
+            <h3 style="color: black;margin-right: 0px;"> راحتی خرید آنلاین</h3>
+            <p style="color: rgb(61, 60, 60);font-size: 20px;font: bold;border: 2px dotted gray; border-radius: 5px;">
+                هدف ما در برتر دیجیتال، چشاندن طعم خریدی مطمئن و در عین حال راحت به مشتریانمان است. از ابتدای تاسیس،
+                ماموریت ما حل مشکل سردرگمی و لزوم صرف زمان و هزینه برای اطمینان از اصالت، کیفیت و قیمت مناسب کالا در روش
+                خرید سنتی می‌باشد. کلیه اجناس ارائه شده در این فروشگاه، کالای اصل بوده و به همراه تضمین اصالت کالا و ۷
+                روز مهلت تست و تعویض کالا در صورت وجود هر گونه ایراد فنی، عرضه می‌شود. قیمت‌های رقابتی این فروشگاه، به
+                دلیل عرضه مستقیم محصول از عمده فروشان به مشتریان گرامی و کاهش هزینه‌های واسطه‌گری، امکان پذیر شده است.
+                هم اکنون وقت آن رسیده که زمان و انرژی ارزشمند خود را به جای صرف کردن در خیابانها و فروشگاههای مختلف،
+                برای خانواده و کارهای شخصی خود اختصاص داده و اطمینان از خرید خود را به ما بسپارید.</p>
+        </div>
+        <div style="background-color: #263238;">
+            <p
+                style="font-size: x-large;color: whitesmoke;text-align: center; padding-top: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <strong>ما را در شبکه های اجتماعی دنبال کنید </strong>
+                <br><br>
+            </p>
+
+            <div class="share">
+
+                <nav>
+                    <a href="#"><i style="color: #1976D2;" class="fa fa-twitter"></i></a>
+                    <a href="#"><i style="padding-right: 15px;" class="fa fa-facebook"></i></a>
+                    <a href="#"><i style="padding-right: 15px;color: #E53935;" class="fa fa-google"></i></a>
+                    <a href="#"><i style="padding-right: 15px;" class="fa fa-skype"></i></a>
+                    <a href="#"><i style="padding-right: 15px;color: #1976D2;" class="fa fa-telegram"></i></a>
+                    <a href="#"><i style="padding-right: 15px;color: #8E24AA;" class="fa fa-instagram"></i></a>
+                    <a href="#"><i style="padding-right: 15px;color: #66BB6A;" class="fa fa-whatsapp"></i></a>
+                    <a href="#"><i style="padding-right: 15px;color: #C62828;" class="fa fa-youtube"></i></a>
+                    <a href="#"><i style="padding-right: 15px;color: #2979FF;" class="fa fa-linkedin"></i></a>
+                </nav>
+            </div>
+            <br>
+            <div class="support">
+                <p style="position: fixed;bottom: 160px; left:30px;width: 100px;color: white;font-size:16px">پشتیبانی
+                    انلاین</p>
+
+                <img src="assests/img/support1.jpg" alt="پشتیبانی "
+                    style="position: fixed;bottom: 40px;left:30px;width: 100px;border-radius: 70px;">
+            </div>
+            <div class="foot1">
+                <p style="margin-right: 1px;">
+                    استفاده از کلیه مطالب با ذکر منبع بلامانع است. کلیه حقوق این سایت برای فروشگاه اینترنتی برتر دیجیتال
+                    محفوظ است.©
+                </p>
+                <span style="margin-right: 1px;"> برتر دیجیتال بانک ملی 1395-1400©</span>
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

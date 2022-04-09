@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>درباره ما</title>
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #header nav {
+            margin-right: 35px;
+        }
+
+        #header nav a {
+            margin: 10px;
+            padding: 10px 40px;
+            color: rgb(61, 60, 60);
+            border-bottom: 2px solid transparent;
+            transition: 1s;
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+        }
+
+        #header nav a:hover {
+            border-color: whitesmoke;
+            color: black;
+        }
+
+        #map-canvas {
+            width: 700px;
+            height: 300px;
+            margin: 0 auto;
+
+        }
+        #contactUs .left{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    overflow: hidden;
+}
+
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript">
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(35.81448599490026, 51.407302107603186);
+            var mapOptions = {
+                zoom: 15,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var contentString = '<div style="direction: rtl; text-align: right;font-family: Tahoma;">' +
+                '<h4>تهران ایران</h4>' +
+                '<h5>ولنجک</h5>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: ' ولنجک تهران ایران '
+            });
+
+            infowindow.open(map, marker);
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+</head>
+<header id="header">
+
+    <div style="padding-top: 10px;"><img src="assests/img/logo-small.png" alt="" style="width: 10%;"></div>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="products">محصولات</a>
+        <a href="mobile">موبایل</a>
+        <a href="blog.html">صفحه بلاگ</a>
+        <a href="aboutus.html">درباره ما</a>
+        <a href="contact.html">تماس با ما</a>
+
+    </nav>
+    <br><br><br><br>
+    <div style="text-align: center;font-size: larger;">
+        <p>
+            <strong> ادرس ما:تهران ولنجک خیابان 13 پ 5 شرکت برتر</strong>
+        </p>
+        <p>
+            <strong> تلفن تماس : 771007 و 09191234567</strong>
+        </p>
+    </div>
+
+    <body style="background-image: url(assests/img/IMG_0493.JPG);background-repeat: no-repeat;background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  " onload="initialize()">
+        <div id="map-canvas"></div> 
+        <div class="left">
+            <h2 >درباره ما</h2>
+            <p style="color: white;text-align: right;"><strong>
+                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+                در شصت و سه درصد گذشته، حال و آینده
+            </strong>  </p>
+        </div>
+                   
+    
+
+    </body>
+
+</html>
